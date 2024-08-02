@@ -12,7 +12,7 @@ def countdown(time):
         turtle.goto(60, 298)
         turtle.pendown()
         turtle.write(time, align='center', font=Font)
-        screen.ontimer(lambda: countdown(time - 1), 10)
+        screen.ontimer(lambda: countdown(time - 1), 1000)
     else:
         turtle.penup()
         turtle.goto(130, 298)
